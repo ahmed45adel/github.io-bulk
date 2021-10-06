@@ -1,0 +1,17 @@
+@mixin button($grediantColor1, $grediantColor2) {
+  color: #743339;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 2em 0;
+  background: linear-gradient($grediantColor1, $grediantColor1);
+  padding: 1.2em 3.5em 1.2em 3.5em;
+  border-radius: 10px;
+}
+@mixin background-image($filePath, $bgXpos:0, $bgYpos:0, $bgReapeat:no-repeat, $bgSize:cover) {
+    background-image:$filePath;
+    background-position: $bgXpos $bgYpos;
+    background-repeat: $bgReapeat;
+    background-size: $bgSize;
+}
+
